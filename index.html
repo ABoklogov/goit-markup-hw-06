@@ -386,29 +386,49 @@
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <h2 class="modal-caption">Оставьте свои данные, мы вам перезвоним</h2>
-            <form class="js-speaker-form modal-form" autocomplete="off">
-                <label for="name" class="modal-label">Имя</label> 
-                <div>
-                    <input type="text" name="user-name" id="name" class="modal-imput">
-                    <svg>
-                        <use href="./images/decoration/icons/symbol-defs.svg#icon-person"></use>
-                    </svg>
-                </div>
+            <form class="js-speaker-form modal-form" autocomplete="off" action="#">
+                <label class="modal-label">
+                    Имя 
+                    <span class="modal-input-box">
+                        <input type="text" name="user-name" class="modal-input" required>
+                        <svg class="modal-input-box-icon" width="18px" height="18px">
+                            <use href="./images/decoration/icons/symbol-defs.svg#icon-person"></use>
+                        </svg>
+                    </span>
+                </label>
                 
-                <label for="tel" class="modal-label">Телефон</label>
-                <input type="tel" name="tel" id="tel" class="modal-imput">
+                <label class="modal-label">
+                    Телефон
+                    <span class="modal-input-box">
+                        <input type="tel" name="user-tel" class="modal-input" required>
+                        <svg class="modal-input-box-icon" width="18px" height="18px">
+                            <use href="./images/decoration/icons/symbol-defs.svg#icon-phone"></use>
+                        </svg>
+                    </span>
+                </label>
 
-                <label for="mail" class="modal-label">Почта</label>
-                <input type="email" name="email" id="mail" class="modal-imput">
+                <label class="modal-label">
+                    Почта
+                    <span class="modal-input-box">
+                        <input type="email" name="user-email" class="modal-input">
+                        <svg class="modal-input-box-icon" width="18px" height="18px">
+                            <use href="./images/decoration/icons/symbol-defs.svg#icon-email"></use>
+                        </svg>
+                    </span>
+                </label>
 
-                <label for="Comment" class="modal-label">Комментарий</label>
-                <textarea name="Comment" id="Comment" rows="8" placeholder="Введите текст" class="modal-form-comment"></textarea>
-
+                <label for="Comment" class="modal-label modal-labal-comment">
+                    Комментарий
+                    <span class="modal-input-box">
+                        <textarea name="Comment" id="Comment" rows="8" placeholder="Введите текст" class="modal-form-comment"></textarea>
+                    </span>
+                </label>
                 <div class="modal-conditions">
-                    <input type="checkbox" name="conditions" id="conditions">
+                    <input type="checkbox" name="conditions" id="conditions" value="accept" required class="modal-conditions-input">
                     <label for="conditions">Соглашаюсь с рассылкой и принимаю
                         <a href="#" class="modal-conditions-link">Условия договора</a>
                     </label>
+                    
                 </div>
                 
                 <button type="submit" class="modal-form-btn">Отправить</button>
