@@ -221,7 +221,8 @@ img {
 }
 
 .banner-btn,
-.modal-form-btn {
+.modal-form-btn,
+.footer-btn {
   width: 200px;
   height: 50px;
   margin: 0 auto;
@@ -683,7 +684,10 @@ img {
   margin-right: 10px;
 }
 /* ---------footer-form---------- */
-
+.footer-btn-icon {
+  /* width: 24px;
+  height: 24px; */
+}
 /* ----------------------------FOOTER--------------------------- */
 /* ---------------modal-form----------------- */
 
