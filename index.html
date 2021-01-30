@@ -381,16 +381,19 @@
                     </li>
                 </ul>
             </div>
+            <div class="footer-form">
+
+            </div>
         </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <h2 class="modal-caption">Оставьте свои данные, мы вам перезвоним</h2>
             <form class="js-speaker-form modal-form" autocomplete="off" action="#">
-                <label class="modal-label">
+                <label class="modal-label" >
                     Имя 
                     <span class="modal-input-box">
-                        <input type="text" name="user-name" class="modal-input" required>
+                        <input type="text" name="user-name" class="modal-input" placeholder=" " required>
                         <svg class="modal-input-box-icon" width="18px" height="18px">
                             <use href="./images/decoration/icons/symbol-defs.svg#icon-person"></use>
                         </svg>
@@ -400,7 +403,7 @@
                 <label class="modal-label">
                     Телефон
                     <span class="modal-input-box">
-                        <input type="tel" name="user-tel" class="modal-input" required>
+                        <input type="tel" name="user-tel" class="modal-input" placeholder=" " required>
                         <svg class="modal-input-box-icon" width="18px" height="18px">
                             <use href="./images/decoration/icons/symbol-defs.svg#icon-phone"></use>
                         </svg>
@@ -410,7 +413,7 @@
                 <label class="modal-label">
                     Почта
                     <span class="modal-input-box">
-                        <input type="email" name="user-email" class="modal-input">
+                        <input type="email" name="user-email" class="modal-input" placeholder=" " required>
                         <svg class="modal-input-box-icon" width="18px" height="18px">
                             <use href="./images/decoration/icons/symbol-defs.svg#icon-email"></use>
                         </svg>
@@ -423,14 +426,14 @@
                         <textarea name="Comment" id="Comment" rows="8" placeholder="Введите текст" class="modal-form-comment"></textarea>
                     </span>
                 </label>
-                <div class="modal-conditions">
-                    <input type="checkbox" name="conditions" id="conditions" value="accept" required class="modal-conditions-input">
-                    <label for="conditions">Соглашаюсь с рассылкой и принимаю
-                        <a href="#" class="modal-conditions-link">Условия договора</a>
-                    </label>
-                    
-                </div>
                 
+                <label for="conditions" class="modal-conditions">
+                    <input type="checkbox" name="conditions" id="conditions" value="accept" required class="modal-conditions-input">
+                    <span class="conditions-icon-check"></span>
+                        Соглашаюсь с рассылкой и принимаю&ensp;
+                    <a href="#" class="modal-conditions-link">Условия договора</a>
+                </label>
+              
                 <button type="submit" class="modal-form-btn">Отправить</button>
             </form>
             <button type="button" data-modal-close class="modal-btn">

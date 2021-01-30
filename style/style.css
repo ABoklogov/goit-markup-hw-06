@@ -682,9 +682,10 @@ img {
 .footer-links li:not(:last-child) {
   margin-right: 10px;
 }
+/* ---------footer-form---------- */
 
 /* ----------------------------FOOTER--------------------------- */
-/* ---------------FORM----------------- */
+/* ---------------modal-form----------------- */
 
 .modal-form {
   display: flex;
@@ -726,6 +727,37 @@ img {
   position: absolute;
   top: 15px;
   left: 12px;
+  transition: fill 250ms var(--timing-function);
+}
+
+.modal-input:placeholder-shown:focus + .modal-input-box-icon,
+.modal-input:placeholder-shown:focus,
+.modal-form-comment:placeholder-shown:focus,
+.modal-input:not(:placeholder-shown):focus + .modal-input-box-icon,
+.modal-input:not(:placeholder-shown):focus,
+.modal-form-comment:not(:placeholder-shown):focus {
+  fill: var(--hover-color);
+  border-color: var(--hover-color);
+  outline: none;
+}
+
+.modal-conditions .conditions-icon-check {
+  display: block;
+  width: 16px;
+  height: 15px;
+  margin-right: 7px;
+  border: 2px solid var(--title-color);
+  border-radius: 4px;
+  transition: background-color 250ms var(--timing-function),
+    border-color 250ms var(--timing-function);
+}
+
+.modal-conditions-input:checked + .conditions-icon-check {
+  background-color: var(--hover-color);
+  border-color: var(--hover-color);
+  background-image: url(../images/decoration/icons/icon-check.svg);
+  background-size: contain;
+  background-origin: border-box;
 }
 
 .modal .modal-input,
@@ -734,6 +766,7 @@ img {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   resize: none;
+  transition: border-color 250ms var(--timing-function);
 }
 
 .modal .modal-form-comment {
@@ -749,13 +782,6 @@ img {
   align-items: center;
   justify-content: center;
   margin-bottom: 30px;
-}
-
-.modal-conditions .modal-conditions-input {
-  margin-right: 8px;
-}
-
-.modal-conditions label {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -764,7 +790,19 @@ img {
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.modal-conditions-link {
+.modal-conditions .modal-conditions-input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0000);
+  overflow: hidden;
+}
+
+.modal .modal-conditions-link {
   text-decoration: underline;
   color: var(--hover-color);
 }
+/* ---------------/modal-form---------------- */
