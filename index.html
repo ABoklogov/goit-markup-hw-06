@@ -383,7 +383,7 @@
             </div>
             <div class="footer-form-box">
                 <p class="footer-form-title">Подпишитесь на рассылку</p>
-                <form class="footer-form">
+                <form class="footer-form" action="" method="GET">
                     <label class="footer-form-label">
                         <input class="footer-form-input" type="email" name="user-email" placeholder="E-mail" required>
                     </label>
@@ -401,7 +401,7 @@
         <div class="modal">
             <h2 class="modal-caption">Оставьте свои данные, мы вам перезвоним</h2>
             <form class="js-speaker-form modal-form" autocomplete="off" action="#">
-                <label class="modal-label" >
+                <label class="modal-label">
                     Имя 
                     <span class="modal-input-box">
                         <input type="text" name="user-name" class="modal-input" placeholder=" " required>
@@ -455,7 +455,7 @@
         </div>
     </div>
     <script src="./js/modal.js"></script>
-    <script>(() => {
+    <!-- <script>(() => {
         document.querySelector('.js-speaker-form').addEventListener('submit', e => {
         e.preventDefault();
         
@@ -464,6 +464,6 @@
         );
         });
         })();
-    </script>
+    </script> -->
 </body>
 </html>
