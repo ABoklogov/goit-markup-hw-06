@@ -382,17 +382,18 @@
                 </ul>
             </div>
             <div class="footer-form-box">
-                <p>Подпишитесь на рассылку</p>
+                <p class="footer-form-title">Подпишитесь на рассылку</p>
                 <form class="footer-form">
-                    <label>
-                        <input type="email" name="user-name" required>
+                    <label class="footer-form-label">
+                        <input class="footer-form-input" type="email" name="user-email" placeholder="E-mail" required>
                     </label>
+                    <button type="submit" class="footer-btn">
+                        <span>Подписаться</span>
+                        <svg class="footer-btn-icon" width="24" height="24">
+                            <use href="./images/decoration/icons/symbol-defs.svg#icon-subscription"></use>
+                        </svg>
+                    </button>
                 </form>
-                <button type="submit" class="footer-btn">Подписаться
-                    <svg class="footer-btn-icon" width="24" height="24">
-                        <use href="./images/decoration/icons/symbol-defs.svg#icon-subscription"></use>
-                    </svg>
-                </button>
             </div>
         </div>
     </footer>
@@ -436,14 +437,14 @@
                         <textarea name="Comment" id="Comment" rows="8" placeholder="Введите текст" class="modal-form-comment"></textarea>
                     </span>
                 </label>
-                
-                <label for="conditions" class="modal-conditions">
-                    <input type="checkbox" name="conditions" id="conditions" value="accept" required class="modal-conditions-input">
+
+                <label class="modal-conditions">
+                    <input type="checkbox" name="conditions"  value="accept" required class="modal-conditions-input">
                     <span class="conditions-icon-check"></span>
                         Соглашаюсь с рассылкой и принимаю&ensp;
                     <a href="#" class="modal-conditions-link">Условия договора</a>
                 </label>
-              
+
                 <button type="submit" class="modal-form-btn">Отправить</button>
             </form>
             <button type="button" data-modal-close class="modal-btn">
