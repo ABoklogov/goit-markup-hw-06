@@ -657,7 +657,7 @@ img {
 }
 
 .footer .footer-box-contacts {
-  margin-right: 70px;
+  margin-right: 85px;
 }
 
 .footer .footer-links {
@@ -810,6 +810,9 @@ img {
   background-image: url(../images/decoration/icons/icon-check.svg);
   background-size: contain;
   background-origin: border-box;
+}
+.modal-conditions-input:focus + .conditions-icon-check {
+  border-color: var(--hover-color);
 }
 
 .modal .modal-input,
