@@ -559,12 +559,12 @@ img {
 .portfolio-box .portfolio-list {
   width: 370px;
   margin: 15px;
+  outline: 1px solid var(--portfolio-item-border-color);
+  outline-offset: -1px;
 }
 
 .portfolio-box-aside {
   padding: 20px 24px;
-  border: 1px solid var(--portfolio-item-border-color);
-  border-top: transparent;
 }
 
 .portfolio .portfolio-list-title {
