@@ -69,7 +69,7 @@ img {
   margin: -1px;
   border: 0;
   padding: 0;
-  clip: rect(0000);
+  clip: rect(0 0 0 0);
   overflow: hidden;
 }
 /* -------------------------/COMPONENTS------------------------- */
@@ -361,6 +361,8 @@ img {
 
 .lessons-site .lessons-site-box {
   position: relative;
+  width: 370px;
+  height: 294px;
 }
 
 .lessons-site .lessons-site-subbox {
@@ -804,6 +806,14 @@ img {
     border-color 250ms var(--timing-function);
 }
 
+.modal-conditions .modal-conditions-input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
 .modal-conditions-input:checked + .conditions-icon-check {
   background-color: var(--hover-color);
   border-color: var(--hover-color);
@@ -811,6 +821,7 @@ img {
   background-size: contain;
   background-origin: border-box;
 }
+
 .modal-conditions-input:focus + .conditions-icon-check {
   border-color: var(--hover-color);
 }
@@ -833,6 +844,7 @@ img {
 }
 
 .modal .modal-conditions {
+  position: relative;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -843,17 +855,6 @@ img {
   letter-spacing: 0.03em;
   color: var(--text-color);
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.modal-conditions .modal-conditions-input {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  clip: rect(0000);
-  overflow: hidden;
 }
 
 .modal .modal-conditions-link {
